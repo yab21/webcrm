@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="Groupe_20212" data-name="Groupe 20212" transform="translate(-23 -529)">
+    <circle id="Ellipse_195" data-name="Ellipse 195" cx="8.5" cy="8.5" r="8.5" transform="translate(23 529)" fill="#212121"/>
+    <path id="Icon_awesome-power-off" data-name="Icon awesome-power-off" d="M6.986.887a4.063,4.063,0,1,1-4.723,0,.394.394,0,0,1,.574.126l.259.46a.393.393,0,0,1-.108.508,2.753,2.753,0,1,0,3.276,0,.391.391,0,0,1-.107-.506l.259-.46a.393.393,0,0,1,.57-.128Zm-1.7,3.44V.393A.392.392,0,0,0,4.889,0H4.364a.392.392,0,0,0-.393.393V4.326a.392.392,0,0,0,.393.393h.524A.392.392,0,0,0,5.282,4.326Z" transform="translate(26.874 533.371)" fill="#fff"/>
+  </g>
+</svg>

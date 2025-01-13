@@ -1,0 +1,12 @@
+<svg id="Groupe_19708" data-name="Groupe 19708" xmlns="http://www.w3.org/2000/svg" width="29.003" height="29.003" viewBox="0 0 29.003 29.003">
+  <g id="Groupe_19707" data-name="Groupe 19707" transform="translate(0 0)">
+    <g id="Groupe_19706" data-name="Groupe 19706" transform="translate(0 0)">
+      <path id="Tracé_23138" data-name="Tracé 23138" d="M0,0H29V29H0Z" fill="none"/>
+      <path id="Tracé_23139" data-name="Tracé 23139" d="M22.391,20.373l-1.559-1.559V12.772c0-3.71-1.982-6.816-5.438-7.637V4.313a1.813,1.813,0,0,0-3.625,0v.822C8.3,5.956,6.331,9.05,6.331,12.772v6.042L4.772,20.373a1.209,1.209,0,0,0,.846,2.066H21.533a1.209,1.209,0,0,0,.858-2.066Zm-3.976-.35H8.748V12.772c0-3,1.825-5.438,4.834-5.438s4.834,2.441,4.834,5.438Zm-4.834,6.042A2.424,2.424,0,0,0,16,23.648H11.164A2.416,2.416,0,0,0,13.581,26.065Z" transform="translate(0.92 0.521)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_194" data-name="Ellipse 194" transform="translate(16.695 6.958)" fill="#ff8000" stroke="#e8e8e8" stroke-width="1">
+      <ellipse cx="3.71" cy="3.71" rx="3.71" ry="3.71" stroke="none"/>
+      <ellipse cx="3.71" cy="3.71" rx="3.21" ry="3.21" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<aside
+    class="sidebar sidebar-fixed-left top-20 md:top-24 sidebar-mobile h-[calc(100vh-6rem)] bg-white justify-start max-sm:fixed max-sm:-translate-x-full overflow-hidden">
+    <!-- Wrapper pour le contenu scrollable avec une hauteur fixe -->
+    <div class="flex flex-col h-full overflow-y-auto">
+        <!-- Section du haut (profil) -->
+        <section class="sidebar-title items-center gap-2 p-4">
+            <img src="/PNG/Ellipse 1.png" alt="admin icon" class="h-8 md:h-14 rounded-full w-auto object-cover" />
+            <div class="flex flex-col">
+                <span class="capitalize text-base text-gray-500">jon snow</span>
+                <span class="text-sm font-light text-content2 capitalize">administrator</span>
+            </div>
+        </section>
+
+        <!-- Section du menu principal (scrollable) -->
+        <div class="flex-1 overflow-y-auto">
+            <app-menu-item></app-menu-item>
+        </div>
+
+        <!-- Footer (toujours visible) -->
+        <section class="sidebar-footer bg-white mt-auto">
+            <div class="divider my-0"></div>
+            <a routerLink="/"
+                class="flex mx-4 my-4 gap-2 items-center hover:text-orange-500 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.004" height="25.379" viewBox="0 0 29.004 25.379">
+                    <path id="Icon_open-account-login" data-name="Icon open-account-login"
+                        d="M10.877,0V3.626h14.5V21.753h-14.5v3.626H29V0ZM14.5,7.251v3.626H0V14.5H14.5v3.626l7.251-5.438Z"
+                        fill="#6d6d6d" />
+                </svg>
+                <span>Disconnect</span>
+            </a>
+        </section>
+    </div>
+</aside>

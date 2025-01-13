@@ -1,0 +1,71 @@
+<section class="menu-section px-4 mt-4">
+  <span class="menu-title text-sm text-gray-500 font-extralight uppercase">Main Menu</span>
+  <ul class="menu-items">
+    <li *ngFor="let item of sidebarItems; let i = index; trackBy: trackByFn">
+      <ng-container *ngIf="item.route; else expandableItem">
+        <a 
+          [routerLink]="item.route" 
+          routerLinkActive="bg-orange-500 text-white" 
+          class="menu-item hover:bg-orange-50 active:bg-orange-100">
+          <ng-container *ngIf="item.icon; else defaultIcon">
+            <img 
+              [src]="item.icon" 
+              [alt]="item.label + ' icon'" 
+              class="h-5 w-5 opacity-75" /> 
+          </ng-container>
+          <ng-template #defaultIcon>
+            <span class="default-icon h-5 w-5"></span>
+          </ng-template>
+          <span>{{ item.label }}</span>
+        </a>
+      </ng-container>
+
+      <ng-template #expandableItem>
+        <div 
+          class="menu-item justify-between hover:bg-orange-50 active:bg-orange-100 relative" 
+          [class.border-l-4]="item.isExpanded"
+          [class.border-orange-500]="item.isExpanded"
+          role="button"
+          tabindex="0"
+          (keydown)="toggleExpand(item, $event)" 
+          (click)="toggleExpand(item, null)" 
+          [attr.aria-expanded]="item.isExpanded" 
+          [attr.aria-controls]="'submenu-' + i">
+          <div class="flex items-center gap-2">
+            <ng-container *ngIf="item.icon; else defaultIcon">
+              <img 
+                [src]="item.icon" 
+                [alt]="item.label + ' icon'" 
+                class="h-5 w-5 opacity-75" />
+            </ng-container>
+            <ng-template #defaultIcon>
+              <span class="default-icon h-5 w-5"></span>
+            </ng-template>
+            <span>{{ item.label }}</span>
+          </div>
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            class="h-4 w-4 transition-transform duration-200"
+            [class.rotate-180]="item.isExpanded"
+            viewBox="0 0 20 20" 
+            fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <ul 
+          class="menu-items pl-6" 
+          *ngIf="item.children && item.isExpanded" 
+          [id]="'submenu-' + i">
+          <li *ngFor="let child of item.children">
+            <a 
+              [routerLink]="child.route" 
+              routerLinkActive="bg-orange-500 text-white" 
+              class="menu-item hover:bg-orange-50 active:bg-orange-100">
+              <span>{{ child.label }}</span>
+            </a>
+          </li>
+        </ul>
+      </ng-template>
+    </li>
+  </ul>
+</section>
