@@ -11,32 +11,44 @@ export const SidebarItems: SidebarItem[] = [
   {
     label: 'CRM',
     icon: '/ICONE/Groupe 20209.svg',
+    isExpandable: true,
+    isExpanded: true,
     children: [
-      { label: 'New Client', route: '/crm/dashboard' },
-      { label: 'Shareholder Client', route: '/crm/clients' },
-      { label: 'Change Subscriber Details', route: '/crm/prospects' },
-      { label: 'Accounts', route: '/crm/accounts' },
-      { label: 'Services', route: '/crm/services' },
-      { label: 'Orange Money', route: '/crm/orange-money' },
-      { label: 'Contracts', route: '/crm/contracts' },
-      { label: 'Billing', route: '/crm/billing' }
-    ],
+      { 
+        label: 'Client',
+        isExpandable: true,
+        isExpanded: false,
+        children: [
+          { label: 'New Client', route: '/admin/crm/new-client' },
+          { label: 'Shareholder Client', route: '/admin/crm/shareholder' },
+          { label: 'Change Subscriber Details', route: '/admin/crm/change-subscriber' }
+        ]
+      },
+      { label: 'Accounts', route: '/admin/crm/accounts' },
+      { label: 'Services', route: '/admin/crm/services' },
+      { label: 'Orange Money', route: '/admin/crm/orange-money' },
+      { label: 'Contracts', route: '/admin/crm/contracts' },
+      { label: 'Billing', route: '/admin/crm/billing' }
+    ]
   },
   {
-    label: 'Teams',
-    icon: 'assets/icons/teams.svg',
-    route: '/teams',
+    label: 'System',
+    icon: '/ICONE/Groupe 20209.svg',
+    route: '/admin/teams'
   },
   {
-    label: 'Billing',
-    icon: 'assets/icons/billing.svg',
-    route: '/billing',
+    label: 'Global',
+    icon: '/ICONE/Groupe 20211.svg',
+    route: '/admin/billing'
   },
   {
-    label: 'Account',
-    icon: 'assets/icons/account.svg',
-  }
-].map(item => ({
-  ...item,
-  isExpandable: !!item.children?.length,
-}))
+    label: 'Reporting Manager',
+    icon: '/ICONE/Layer 2.svg',
+    route: '/admin/account'
+  },
+  {
+    label: 'Exit',
+    icon: '/ICONE/eXIT.svg',
+    route: '/admin/account'
+  },
+];

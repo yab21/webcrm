@@ -11,6 +11,7 @@ import { CustomerCareComponent } from '../layouts/admin-layout/customer-care/cus
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { SidebarContentComponent } from '../layouts/admin-layout/sidebar/sidebar-content/sidebar-content.component';
 import { MenuItemComponent } from '../layouts/admin-layout/sidebar/sidebar-content/menu-item/menu-item.component';
+import { MenuBottomComponent } from '../layouts/admin-layout/sidebar/sidebar-content/menu-bottom/menu-bottom.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import { MenuItemComponent } from '../layouts/admin-layout/sidebar/sidebar-conte
     CustomerCareComponent,
     BreadcrumbComponent,
     SidebarContentComponent,
-    MenuItemComponent
-  ],
+    MenuItemComponent,
+    MenuBottomComponent
+    ],
   imports: [
     CommonModule,
     RouterModule,
@@ -38,7 +40,8 @@ import { MenuItemComponent } from '../layouts/admin-layout/sidebar/sidebar-conte
     CustomerCareComponent,
     BreadcrumbComponent,
     SidebarContentComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    MenuBottomComponent
   ]
 })
 export class SharedModule { }

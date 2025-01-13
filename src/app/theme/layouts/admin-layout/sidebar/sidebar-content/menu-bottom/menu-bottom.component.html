@@ -1,0 +1,90 @@
+<section class="menu-section px-4">
+    <span class="menu-title uppercase mt-4">main menu</span>
+    <ul class="menu-items">
+      <li *ngFor="let item of sidebarItems; let i = index; trackBy: trackByFn">
+        <!-- Item avec enfants -->
+        <div *ngIf="item.isExpandable" 
+          class="menu-item justify-between hover:bg-orange-50 active:bg-orange-100 relative" 
+          [class.border-l-4]="item.isExpanded"
+          [class.border-orange-500]="item.isExpanded"
+          [class.bg-orange-50]="item.isExpanded"
+          role="button"
+          tabindex="0"
+          (keydown)="toggleExpand(item, $event)" 
+          (click)="toggleExpand(item, null)">
+          <div class="flex items-center gap-2">
+            <img *ngIf="item.icon" [src]="item.icon" [alt]="item.label" class="h-5 w-5 opacity-75" />
+            <span>{{ item.label }}</span>
+          </div>
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            class="h-4 w-4 transition-transform duration-200"
+            [class.rotate-180]="item.isExpanded"
+            viewBox="0 0 20 20" 
+            fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+  
+        <!-- Sous-menu -->
+        <ul *ngIf="item.isExpandable && item.isExpanded" class="menu-items pl-4 mt-1">
+          <li *ngFor="let child of item.children">
+            <!-- Enfant avec sous-enfants -->
+            <div *ngIf="child.isExpandable"
+              class="menu-item justify-between hover:bg-orange-50 active:bg-orange-100 relative"
+              [class.border-l-4]="child.isExpanded"
+              [class.border-orange-500]="child.isExpanded"
+              [class.bg-orange-50]="child.isExpanded"
+              role="button"
+              tabindex="0"
+              (keydown)="toggleExpand(child, $event)"
+              (click)="toggleExpand(child, null)">
+              <div class="flex items-center gap-2">
+                <img *ngIf="child.icon" [src]="child.icon" [alt]="child.label" class="h-5 w-5 opacity-75" />
+                <span>{{ child.label }}</span>
+              </div>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                class="h-4 w-4 transition-transform duration-200"
+                [class.rotate-180]="child.isExpanded"
+                viewBox="0 0 20 20" 
+                fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+  
+            <!-- Sous-menu niveau 2 -->
+            <ul *ngIf="child.isExpandable && child.isExpanded" class="menu-items pl-4 mt-1">
+              <li *ngFor="let grandChild of child.children">
+                <a [routerLink]="grandChild.route"
+                  routerLinkActive="bg-orange-500 text-white"
+                  class="menu-item hover:bg-orange-50 active:bg-orange-100">
+                  <span>{{ grandChild.label }}</span>
+                </a>
+              </li>
+            </ul>
+  
+            <!-- Enfant sans sous-enfants -->
+            <a *ngIf="!child.isExpandable"
+              [routerLink]="child.route"
+              routerLinkActive="bg-orange-500 text-white"
+              class="menu-item hover:bg-orange-50 active:bg-orange-100">
+              <img *ngIf="child.icon" [src]="child.icon" [alt]="child.label" class="h-5 w-5 opacity-75" />
+              <span>{{ child.label }}</span>
+            </a>
+          </li>
+        </ul>
+  
+        <!-- Item sans enfants -->
+        <a *ngIf="!item.isExpandable"
+          [routerLink]="item.route"
+          routerLinkActive="bg-orange-500 text-white"
+          class="menu-item hover:bg-orange-50 active:bg-orange-100">
+          <img *ngIf="item.icon" [src]="item.icon" [alt]="item.label" class="h-5 w-5 opacity-75" />
+          <span>{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  
+  

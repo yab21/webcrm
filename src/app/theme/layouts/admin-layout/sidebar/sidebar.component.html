@@ -1,5 +1,9 @@
 <div class="hidden lg:block sm:w-full sm:max-w-[18rem]">
-	<input type="checkbox" id="sidebar-mobile-fixed" class="sidebar-state" />
+	<input type="checkbox" id="sidebar-mobile-fixed" class="sidebar-state hidden" />
 	<label for="sidebar-mobile-fixed" class="sidebar-overlay"></label>
-	<app-sidebar-content></app-sidebar-content>
+	<!-- <aside
+    class="sidebar sidebar-fixed-left top-20 md:top-24 sidebar-mobile h-[calc(100vh-6rem)] bg-white justify-start max-sm:fixed max-sm:-translate-x-full overflow-hidden"> -->
+	<aside class="sidebar sidebar-fixed-left top-20 md:top-24 sidebar-mobile h-[calc(100vh-6rem)] bg-white justify-start max-sm:fixed max-sm:-translate-x-full lg:translate-x-0 transition-transform duration-300">
+		<app-sidebar-content></app-sidebar-content>
+	</aside>
 </div>  
