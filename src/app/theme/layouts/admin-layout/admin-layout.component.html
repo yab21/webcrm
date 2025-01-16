@@ -5,18 +5,19 @@
     <!-- Container principal -->
     <div class="flex pt-16 md:pt-24">
         <!-- Sidebar -->
-        <app-sidebar class="z-40"></app-sidebar> 
+        <app-sidebar class="z-40"></app-sidebar>
 
         <!-- Contenu principal -->
-        <main class="w-full max-w-screen min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-6rem)] ml-0 lg:ml-[18rem] p-4 transition-all duration-300">
+        <main
+            class="w-full max-w-screen min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-6rem)] ml-0 lg:ml-[18rem] p-4 transition-all duration-300">
             <div class="pb-24">
-                <div class="pl-4 pt-4">
+                <div class="pl-4">
                     <app-breadcrumb></app-breadcrumb>
                 </div>
                 <router-outlet></router-outlet>
             </div>
             <!-- Footer -->
-            <footer class="bg-white py-6 absolute bottom-0 left-0 right-0">
+            <footer class="w-full max-w-screen bg-white py-6 absolute bottom-0 left-0 right-0">
                 <div class="container mx-auto px-4 md:px-8 text-center">
                     <p class="text-sm md:text-base">Copyrights © <a routerLink="/" class="text-blue-500">Synelia</a></p>
                 </div>

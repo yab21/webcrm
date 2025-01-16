@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './theme/layouts/default/default.component';
 import { AdminLayoutComponent } from './theme/layouts/admin-layout/admin-layout.component';
 import { CustomerCareComponent } from './theme/layouts/admin-layout/customer-care/customer-care.component';
+import { TransactionsComponent } from './theme/layouts/admin-layout/customer-care/billing/transactions/transactions.component';
+import { ChangeSubscriberDetailsComponent } from './theme/layouts/admin-layout/customer-care/change-subscriber-details/change-subscriber-details.component';
 
 const routes: Routes = [
   {
@@ -25,8 +27,20 @@ const routes: Routes = [
       },
       {
         path: 'customercare',
-        component: CustomerCareComponent
+        component: CustomerCareComponent,
+        data: { breadcrumb: 'Subscribers' }
       },
+      {
+        path: 'billing/transactions', 
+        component: TransactionsComponent,
+        data: { breadcrumb: 'Transactions' }
+      },
+      {
+        path: 'client/changesubscriberdetails',
+        component: ChangeSubscriberDetailsComponent,
+        data: { breadcrumb: 'Client - Change Subscriber Details' }
+      }
+  
       // {
       //   path: 'crm',
       //   loadChildren: () => import('./theme/layouts/admin-layout/crm/crm.module').then(m => m.CrmModule)

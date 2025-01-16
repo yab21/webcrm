@@ -4,7 +4,7 @@ import { TitleService } from '../../shared/services/title.service';
 
 @Component({
   selector: 'app-default',
-  standalone: false,
+  standalone: false, 
   
   templateUrl: './default.component.html',
   styleUrl: './default.component.scss',

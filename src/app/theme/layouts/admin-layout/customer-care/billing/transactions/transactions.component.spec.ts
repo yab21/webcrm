@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuBottomComponent } from './menu-bottom.component';
+import { TransactionsComponent } from './transactions.component';
 
-describe('MenuBottomComponent', () => {
-  let component: MenuBottomComponent;
-  let fixture: ComponentFixture<MenuBottomComponent>;
+describe('TransactionsComponent', () => {
+  let component: TransactionsComponent;
+  let fixture: ComponentFixture<TransactionsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MenuBottomComponent]
+      declarations: [TransactionsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MenuBottomComponent);
+    fixture = TestBed.createComponent(TransactionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

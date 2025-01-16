@@ -1,1 +1,699 @@
-<p>change-subscriber-details works!</p>
+<div class="flex w-full flex-col p-4">
+    <h1 class="text-xl my-1 text-gray-500">Summary</h1>
+    <div class="w-full mx-auto rounded-xl bg-white p-6 shadow-4">
+        <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 py-2">
+                <div class="col-span-1">
+                    <!--Phone number input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="phone"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Phone number
+                        </label>
+                        <input id="phone" type="tel" placeholder="Enter your email"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Imsi/Iccid input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="imsi"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Imsi/Iccid
+                        </label>
+                        <input id="imsi" type="tel" placeholder="9494877484494999"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Phone number input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="name"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Subscriber Name
+                        </label>
+                        <input id="name" type="text" placeholder="Aegon Targaryen"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Registry Date input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="registry"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Registry Date
+                        </label>
+                        <input id="registry" type="date" placeholder="USD Prepaid (B2B Tag)"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Status Date input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="date"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Status Date
+                        </label>
+                        <input id="date" type="date" placeholder="5/4/2016"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Sim Card input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="sim"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Sim Card Type
+                        </label>
+                        <input id="sim" type="text" placeholder="4G ACCESS"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-2">
+                <div class="col-span-1 md:col-span-2">
+                    <!--Profile Plan input-->
+                    <div class="max-w-screen">
+                        <label for="plan"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Profile Plan
+                        </label>
+                        <input id="plan" type="text" placeholder="USD Prepaid (B2B Tag)"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Service Type input-->
+                    <div class="w-full">
+                        <label for="service"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Service Type
+                        </label>
+                        <input id="service" type="text" placeholder="Mobile GSM"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--classification input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="classification"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Classification
+                        </label>
+                        <input id="classification" type="text" placeholder="B2B"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Status input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="status"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Status
+                        </label>
+                        <input id="status" type="text" placeholder="Active"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Other Data</h1>
+        <div class="w-full mx-auto rounded-xl bg-white p-6 shadow-4">
+            <div class="grid grid-cols-5 gap-4 py-2">
+                <div class="col-span-5 lg:col-span-1">
+                    <div class="min-h-60 flex flex-col mt-0 md:mt-6">
+                        <div class="flex flex-auto flex-col justify-center items-center p-4 md:p-5">
+                            <img src="/PNG/Ellipse 500.png" class="h-28 w-28 rounded-full object-cover" alt="profile">
+                            <button type="button"
+                                class="flex items-center gap-2 bg-gray-100 rounded-2xl px-5 py-3 mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23.559" height="21.203"
+                                    viewBox="0 0 23.559 21.203">
+                                    <path id="Tracé_23493" data-name="Tracé 23493"
+                                        d="M16.277,4.356l2.156,2.356H23.2V20.847H4.356V6.712H9.127l2.156-2.356h4.995M17.314,2H10.246L8.09,4.356H4.356A2.363,2.363,0,0,0,2,6.712V20.847A2.363,2.363,0,0,0,4.356,23.2H23.2a2.363,2.363,0,0,0,2.356-2.356V6.712A2.363,2.363,0,0,0,23.2,4.356H19.469ZM13.78,10.246a3.534,3.534,0,1,1-3.534,3.534,3.544,3.544,0,0,1,3.534-3.534m0-2.356a5.89,5.89,0,1,0,5.89,5.89A5.892,5.892,0,0,0,13.78,7.89Z"
+                                        transform="translate(-2 -2)" fill="#ff7900" />
+                                </svg>
+                                <span class="text-sm font-light">Picture</span>
+                            </button>
+                            <h3 class="flex items-center gap-2 text-sm lg:text-lg font-bold text-green-600 mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path id="Tracé_23505" data-name="Tracé 23505"
+                                        d="M12,22A10,10,0,1,0,2,12,10,10,0,0,0,12,22ZM15.536,8.464A1,1,0,1,1,16.95,9.88L11.3,15.533l0,0a1,1,0,0,1-1.414,0l0,0L7.05,12.708a1,1,0,1,1,1.414-1.414l2.122,2.121,4.95-4.95Z"
+                                        transform="translate(-2 -2)" fill="#1a9422" fill-rule="evenodd" />
+                                </svg>
+                                Fully Valid
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-5 lg:col-span-4">
+                    <div class="flex justify-between flex-col md:flex-row gap-4">
+                        <div class="">
+                            <!--Phone number input-->
+                            <div class="max-w-screen lg:max-w-md">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Relate Client
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="client" type="text" placeholder="0"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                    <input type="text" placeholder=""
+                                        class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                        </div>
+                        <div>
+                            <label for="sim"
+                                class="text-sm xl:text-base font-light tracking-wider text-gray-700 flex justify-between items-center gap-4">
+                                Search
+                                <svg id="refresh" xmlns="http://www.w3.org/2000/svg" width="20.323" height="21.203"
+                                    viewBox="0 0 20.323 21.203">
+                                    <path id="Tracé_23150" data-name="Tracé 23150"
+                                        d="M6.757,21.327c.021.016.044.029.065.045.113.087.234.16.35.242.26.186.52.37.794.529l.027.013a9.728,9.728,0,0,0,1.062.537l.12.05c.17.071.335.14.523.206a10.734,10.734,0,0,0,1.291.354c.252.052.492.091.719.121.035,0,.07.006.105.01.159.019.319.037.462.045.265.027.544.04.81.04A10.249,10.249,0,0,0,23.323,13.282a1.138,1.138,0,1,0-2.275,0,7.972,7.972,0,0,1-7.963,7.963c-.26,0-.516-.026-.772-.052-.185-.015-.385-.046-.587-.081-.179-.031-.358-.064-.533-.108-.13-.031-.254-.067-.378-.1a8,8,0,0,1-1.7-.722l-.008,0c-.206-.119-.4-.258-.593-.395-.1-.072-.206-.134-.3-.211S8,19.386,7.894,19.3c-.161-.14-.324-.277-.476-.427-.075-.076-.141-.162-.213-.242l2.037-.367a1.138,1.138,0,0,0-.4-2.239l-4.75.856A1.139,1.139,0,0,0,3.17,18.2l.856,4.749a1.139,1.139,0,0,0,1.119.935,1.164,1.164,0,0,0,.2-.018,1.139,1.139,0,0,0,.918-1.322l-.355-1.966.027.024A10.48,10.48,0,0,0,6.757,21.327Zm12.81-16.09c-.02-.016-.043-.028-.063-.043-.118-.091-.246-.168-.367-.254-.254-.181-.508-.362-.776-.518-.02-.011-.041-.019-.061-.031a9.719,9.719,0,0,0-1.031-.521l-.12-.05c-.17-.071-.335-.14-.523-.206a10.6,10.6,0,0,0-1.292-.354c-.251-.052-.49-.091-.718-.121-.035,0-.07-.006-.1-.01-.16-.019-.319-.037-.463-.045-.266-.027-.544-.04-.81-.04A10.249,10.249,0,0,0,3,13.282a1.138,1.138,0,1,0,2.275,0,7.972,7.972,0,0,1,7.963-7.963c.26,0,.516.026.772.052.185.015.385.046.587.081.179.031.358.064.533.108.13.032.254.067.378.1a8,8,0,0,1,2.317,1.13c.1.068.2.127.288.2.109.084.207.182.311.272.163.142.329.281.484.436.074.075.138.159.209.237L17.081,8.3a1.138,1.138,0,0,0,.2,2.257,1.165,1.165,0,0,0,.2-.018l4.75-.856a1.139,1.139,0,0,0,.918-1.322L22.3,3.616a1.138,1.138,0,1,0-2.239.4l.355,1.966c-.014-.014-.03-.025-.044-.038A10.71,10.71,0,0,0,19.567,5.237Z"
+                                        transform="translate(-3 -2.68)" fill="#1aaddb" />
+                                </svg>
+
+                            </label>
+                            <div class="relative w-full max-w-xs mt-1">
+                                <!-- Icon -->
+                                <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                                    <svg id="search" xmlns="http://www.w3.org/2000/svg" width="22.471" height="22.471"
+                                        viewBox="0 0 22.471 22.471">
+                                        <path id="search-2" data-name="search"
+                                            d="M3.369,23.33,7.612,19.1A9.884,9.884,0,0,1,5.5,12.984a9.984,9.984,0,1,1,9.984,9.984,9.884,9.884,0,0,1-6.115-2.109L5.141,25.1A1.253,1.253,0,1,1,3.369,23.33ZM22.975,12.984a7.488,7.488,0,1,0-7.488,7.488,7.488,7.488,0,0,0,7.488-7.488Z"
+                                            transform="translate(-3 -3)" fill="#9b9b9b" />
+                                    </svg>
+
+                                </div>
+
+                                <!-- Search -->
+                                <input id="client" type="text"
+                                    class="block w-full px-3 py-3 border bg-gray-100 border-gray-300 rounded-2xl shadow-sm text-sm placeholder:text-gray-400 placeholder:italic transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                                    placeholder="Type here..." />
+
+
+                                <!-- <select
+                                    class="select select-solid pl-10 pr-8 py-2 rounded-lg border border-gray-300 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>23/07/2024</option>
+                                    <option>23/07/2024</option>
+                                    <option>23/07/2024</option>
+                                </select> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full mt-4">
+                        <!--First rpw input-->
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+                            <div class="col-span-1">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Customer N
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="client" type="text" placeholder="12345678965"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                            <div class="col-span-1 md:col-span-2">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Private Name, Middle Name, Family Name
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="client" type="text" placeholder="Aegon Targaryen"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Client Type
+                                </label>
+                                <select
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Private</option>
+                                    <option>23/07/2024</option>
+                                    <option>23/07/2024</option>
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Gender
+                                </label>
+                                <select
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Male</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="client"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Card Type
+                                </label>
+                                <select
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Private</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="card"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Card Number
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="card" type="text" placeholder="0026"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second row input -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4 mt-4">
+                            <div class="col-span-1">
+                                <label for="birthday"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Birthday
+                                </label>
+                                <select id="birthday"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>02/07/1999</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="age"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Age
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="age" type="text" placeholder="25"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="country"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Country Of Origin
+                                </label>
+                                <select id="country"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Liberia</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="place"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Place Of Birth
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="place" type="text" placeholder=""
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="nationality"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Nationality
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input id="nationality" type="text" placeholder="Liberia"
+                                        class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="country"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Profession
+                                </label>
+                                <select id="country"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Other</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="country"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Classification
+                                </label>
+                                <select id="country"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>B2B</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Third row input -->
+                        <div class="max-w-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4">
+                            <div class="col-span-1">
+                                <label for="gsm"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    GSM Validation
+                                </label>
+                                <select id="gsm"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Valid</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="om"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    OM Validation
+                                </label>
+                                <select id="om"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Valid</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                            <div class="col-span-1">
+                                <label for="level"
+                                    class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                                    Qualified for KYC Level
+                                </label>
+                                <select id="level"
+                                    class="select select-solid pl-7 pr-8 py-3 rounded-lg border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                    <option>Level 1</option>
+                                    <!-- <option>23/07/2024</option> -->
+                                    <!-- <option>23/07/2024</option> -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Client Address</h1>
+        <div class="w-full mx-auto rounded-xl bg-white p-6 shadow-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 py-3">
+                <div class="col-span-1 md:col-span-2">
+                    <label for="level" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Address
+                    </label>
+                    <select id="level"
+                        class="select select-solid px-4 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 max-w-full">
+                        <option>Other Address (Residence Pleebo, Maryland) - Actual</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <label for="level" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Address Type
+                    </label>
+                    <select id="level"
+                        class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                        <option>Residence</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <label for="address" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Address
+                    </label>
+                    <input id="address" type="text" placeholder="Pleebo, Maryland"
+                        class="block w-full px-3 py-2 border  bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                </div>
+                <div class="col-span-1">
+                    <label for="door" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Door
+                    </label>
+                    <select id="door"
+                        class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                        <option>Valid</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <label for="door" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Floor
+                    </label>
+                    <select id="door"
+                        class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                        <option>Valid</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <!-- second row -->
+                <div class="col-span-1 md:col-span-2">
+                    <label for="town" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Town
+                    </label>
+                    <select id="town"
+                        class="select select-solid px-4 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 max-w-full">
+                        <option>1</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <label for="address" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Postal Code
+                    </label>
+                    <div class="flex items-center gap-4">
+                        <input id="address" type="text" placeholder="Pleebo, Maryland"
+                            class="block w-full px-3 py-2 border  bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                        <input id="address" type="text" placeholder=""
+                            class="block w-full px-3 py-2 border  bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <label for="door" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        City
+                    </label>
+                    <select id="door"
+                        class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                        <option>Pleeba</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <label for="door" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                        Prefecture
+                    </label>
+                    <select id="door"
+                        class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                        <option>Undefined</option>
+                        <!-- <option>23/07/2024</option> -->
+                        <!-- <option>23/07/2024</option> -->
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Account Details</h1>
+        <div class="w-full mx-auto rounded-xl bg-white px-6 py-6 shadow-4">
+            <h1 class="flex items-center justify-start md:justify-end gap-2 text-sm xl:text-base text-orange-500 mb-4 md:mb-0">
+                <svg id="Groupe_20447" data-name="Groupe 20447" xmlns="http://www.w3.org/2000/svg" width="19.169"
+                    height="19.169" viewBox="0 0 19.169 19.169">
+                    <path id="Tracé_23507" data-name="Tracé 23507" d="M0,0H19.169V19.169H0Z" fill="none" />
+                    <path id="Tracé_23508" data-name="Tracé 23508"
+                        d="M15.779,3H4.6A1.6,1.6,0,0,0,3,4.6V15.779a1.6,1.6,0,0,0,1.6,1.6H15.779a1.6,1.6,0,0,0,1.6-1.6V4.6A1.6,1.6,0,0,0,15.779,3ZM9.158,13.615a.8.8,0,0,1-1.126,0L5.164,10.747A.8.8,0,0,1,6.291,9.621l2.3,2.3,5.5-5.5a.8.8,0,0,1,1.126,1.126L9.158,13.615Z"
+                        transform="translate(-0.604 -0.604)" fill="#ff7900" />
+                </svg>
+
+                Copy the Data from the client
+            </h1>
+            <!-- <div class="flex flex-col md:flex-row justify-between items-center"> -->
+                <div class="w-full max-w-2xl grid grid-cols-2 lg:grid-cols-2 gap-4">
+                    <!--Account ID input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="account" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Account ID
+                        </label>
+                        <input id="account" type="text"
+                            placeholder="Other Address (Residence Pleebo, Maryland) - Actual"
+                            class="block px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                    <!--Account Description input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="account" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Account Description
+                        </label>
+                        <input id="account" type="text"
+                            placeholder="The client Data will be copy to the Account Sata"
+                            class="block px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                </div>
+            <h1 class="text-sm xl:text-base font-light tracking-wider text-gray-700 mt-2 text-start md:text-end md:mt-0">Number of Accounts
+                Per Client: 1</h1>
+        </div>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Subscriber Details</h1>
+        <div class="w-full mx-auto rounded-xl bg-white px-6 py-6 shadow-4">
+            <h1 class="flex items-center justify-start md:justify-end gap-2 text-sm xl:text-base text-orange-500 mb-4 md:mb-0">
+                <svg id="Groupe_20447" data-name="Groupe 20447" xmlns="http://www.w3.org/2000/svg" width="19.169"
+                    height="19.169" viewBox="0 0 19.169 19.169">
+                    <path id="Tracé_23507" data-name="Tracé 23507" d="M0,0H19.169V19.169H0Z" fill="none" />
+                    <path id="Tracé_23508" data-name="Tracé 23508"
+                        d="M15.779,3H4.6A1.6,1.6,0,0,0,3,4.6V15.779a1.6,1.6,0,0,0,1.6,1.6H15.779a1.6,1.6,0,0,0,1.6-1.6V4.6A1.6,1.6,0,0,0,15.779,3ZM9.158,13.615a.8.8,0,0,1-1.126,0L5.164,10.747A.8.8,0,0,1,6.291,9.621l2.3,2.3,5.5-5.5a.8.8,0,0,1,1.126,1.126L9.158,13.615Z"
+                        transform="translate(-0.604 -0.604)" fill="#ff7900" />
+                </svg>
+
+                Copy the Data from the client
+            </h1>
+            <!-- <div class="flex flex-col md:flex-row justify-between items-center"> -->
+            <div class="flex items-center">
+                <div class="w-full max-w-2xl grid grid-cols-2 lg:grid-cols-2 gap-4">
+                    <!--Account ID input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="subscriber" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Subscriber Name
+                        </label>
+                        <input id="subscriber" type="text"
+                            placeholder="Aegon Targaryen"
+                            class="block px-3 py-2 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                    <!--Security Level input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="security" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Security Level
+                        </label>
+                        <select id="security"
+                            class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                            <option>Security Level 1</option>
+                            <!-- <option>23/07/2024</option> -->
+                            <!-- <option>23/07/2024</option> -->
+                        </select>
+                    </div>
+                    <!--Card type input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="card" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Card Type
+                        </label>
+                        <select id="card"
+                            class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                            <option>Other</option>
+                            <!-- <option>23/07/2024</option> -->
+                            <!-- <option>23/07/2024</option> -->
+                        </select>
+                    </div>
+                    <!--Card Number input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="card" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Card Number
+                        </label>
+                        <input id="card" type="0029"
+                            placeholder="Aegon Targaryen"
+                            class="block px-3 py-2 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-sm xl:text-base font-light tracking-wider text-gray-700 mt-2 text-start md:text-end md:mt-0">Number of Accounts
+                Per Client: 1</h1>
+        </div>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Subscriber Address</h1>
+        <div class="w-full mx-auto rounded-xl bg-white px-6 py-6 shadow-4">
+            <!-- <div class="flex flex-col md:flex-row justify-between items-center"> -->
+                <div class="w-full  grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!--Address Type input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="address" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Address Type
+                        </label>
+                        <select id="address"
+                            class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                            <option>Residence</option>
+                            <!-- <option>23/07/2024</option> -->
+                            <!-- <option>23/07/2024</option> -->
+                        </select>
+                    </div>
+                    <!--Address input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="Address" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Address
+                        </label>
+                        <input id="Address" type="text"
+                            placeholder="Pleebo, Maryland"
+                            class="block px-3 py-2 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                    <!--Door input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="door" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Door
+                        </label>
+                        <input id="door" type="text"
+                            placeholder="12"
+                            class="block px-3 py-2 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                    <!--Door input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="floor" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Floor
+                        </label>
+                        <input id="floor" type="text"
+                            placeholder="2"
+                            class="block px-3 py-2 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full" />
+                    </div>
+                    <!--Town input-->
+                    <div class="mb-4 md:mb-0">
+                        <label for="town" class="block text-sm xl:text-base font-light tracking-wider text-gray-700">
+                            Town
+                        </label>
+                        <select id="town"
+                            class="select select-solid pl-7 pr-8 py-2 rounded-2xl border border-gray-200 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                            <option>1</option>
+                            <!-- <option>23/07/2024</option> -->
+                            <!-- <option>23/07/2024</option> -->
+                        </select>
+                    </div>
+        </div>
+    </div>
+    <div class="flex justify-start md:justify-end items-center gap-4 mt-8">
+        <!--Button group input-->
+        <button class="btn flex items-center gap-4 bg-slate-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25.754" height="24.914" viewBox="0 0 25.754 24.914">
+                <path id="XMLID_1414_" d="M24.634,6.2h-5.6V2.84c0-.476-.252-.84-.7-.84H7.418c-.448,0-.7.364-.7.84V6.2H1.12A1.1,1.1,0,0,0,0,7.291V20.14a1.172,1.172,0,0,0,1.12,1.176H5.235l-.672,4.367a1.025,1.025,0,0,0,.224.84,1.012,1.012,0,0,0,.756.392h14.7a1.1,1.1,0,0,0,.756-.42.908.908,0,0,0,.224-.784l-.7-4.4h4.115a1.172,1.172,0,0,0,1.12-1.176V7.291A1.1,1.1,0,0,0,24.634,6.2ZM8.4,3.68h8.958V6.2H8.4ZM6.662,24.955l1.064-7h10.3l1.064,7Zm16.852-5.879H20.183l-.364-2.3A.946.946,0,0,0,18.84,16H6.886a.967.967,0,0,0-.98.784l-.336,2.3H2.239V8.439H23.515ZM5.123,11.238a.825.825,0,0,1,.84-.84H8.594a.84.84,0,0,1,0,1.68H5.963a.842.842,0,0,1-.84-.84Z" transform="translate(0 -2)" fill="#ff7900"/>
+              </svg>              
+            Print
+        </button>
+        <button class="btn flex items-center gap-4 bg-slate-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.906" height="26.409" viewBox="0 0 22.906 26.409">
+                <g id="Groupe_20456" data-name="Groupe 20456" transform="translate(-2.556 -0.499)">
+                  <path id="Tracé_23510" data-name="Tracé 23510" d="M2.556,6.325A1.278,1.278,0,0,0,3.834,7.6h.682V22.7a4.21,4.21,0,0,0,4.2,4.206H19.3A4.21,4.21,0,0,0,23.5,22.7V7.6h.682a1.278,1.278,0,1,0,0-2.556H19.711V3.729A3.233,3.233,0,0,0,16.483.5H11.535a3.232,3.232,0,0,0-3.229,3.23V5.046H3.834A1.278,1.278,0,0,0,2.556,6.324Zm8.306-2.6a.674.674,0,0,1,.673-.674h4.948a.674.674,0,0,1,.673.674V5.047H10.861V3.729ZM7.071,7.6H20.947V22.7a1.652,1.652,0,0,1-1.649,1.65H8.72A1.652,1.652,0,0,1,7.071,22.7V7.6Z" fill="#d20202"/>
+                  <path id="Tracé_23511" data-name="Tracé 23511" d="M12.05,23.643a1.278,1.278,0,0,0,1.278-1.278V12.879a1.278,1.278,0,0,0-2.556,0v9.487a1.278,1.278,0,0,0,1.278,1.278Zm6.352,0a1.278,1.278,0,0,0,1.278-1.278V12.879a1.278,1.278,0,1,0-2.556,0v9.487A1.278,1.278,0,0,0,18.4,23.643Z" transform="translate(-1.217 -1.644)" fill="#d20202"/>
+                </g>
+              </svg>              
+            Remove Client
+        </button>
+        <button class="btn flex items-center gap-4 bg-slate-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.543" height="22.543" viewBox="0 0 22.543 22.543">
+                <path id="Tracé_23512" data-name="Tracé 23512" d="M25.18,10.878,17.665,3.363a1.252,1.252,0,0,0-.4-.263,1.365,1.365,0,0,0-.488-.1H6.757A3.757,3.757,0,0,0,3,6.757V21.786a3.757,3.757,0,0,0,3.757,3.757H21.786a3.757,3.757,0,0,0,3.757-3.757V11.767A1.252,1.252,0,0,0,25.18,10.878ZM10.514,5.5h5.01v2.5h-5.01Zm7.514,17.533H10.514V19.281a1.252,1.252,0,0,1,1.252-1.252h5.01a1.252,1.252,0,0,1,1.252,1.252Zm5.01-1.252a1.252,1.252,0,0,1-1.252,1.252H20.533V19.281a3.757,3.757,0,0,0-3.757-3.757h-5.01A3.757,3.757,0,0,0,8.01,19.281v3.757H6.757A1.252,1.252,0,0,1,5.5,21.786V6.757A1.252,1.252,0,0,1,6.757,5.5H8.01V9.262a1.252,1.252,0,0,0,1.252,1.252h7.514a1.252,1.252,0,0,0,1.252-1.252V7.271l5.01,5.01Z" transform="translate(-3 -3)" fill="#3caf2f"/>
+              </svg>              
+            Save
+        </button>
+        <button class="btn flex items-center gap-4 bg-slate-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22.028" height="22.028" viewBox="0 0 22.028 22.028">
+                <path id="_11_Exit" data-name="11 Exit"
+                    d="M24.028,3.1V22.926a1.1,1.1,0,0,1-1.1,1.1H7.507a1.1,1.1,0,0,1-1.1-1.1V16.318a1.1,1.1,0,1,1,2.2,0v5.507H21.825V4.2H8.608V9.71a1.1,1.1,0,1,1-2.2,0V3.1A1.1,1.1,0,0,1,7.507,2H22.926A1.1,1.1,0,0,1,24.028,3.1ZM14.622,15.349a1.106,1.106,0,0,0,1.564,1.564L19.3,13.8a1.139,1.139,0,0,0,0-1.564L16.186,9.115a1.106,1.106,0,1,0-1.564,1.564l1.245,1.234H3.1a1.1,1.1,0,0,0,0,2.2H15.867Z"
+                    transform="translate(-2 -2)" fill="#d20202" />
+            </svg>
+
+            Exit
+        </button>
+    </div>
+</div>

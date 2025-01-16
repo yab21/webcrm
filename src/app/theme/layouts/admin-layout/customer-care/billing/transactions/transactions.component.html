@@ -1,0 +1,339 @@
+<div class="flex w-full flex-col p-4">
+    <h1 class="text-xl my-1 text-gray-500">Summary</h1>
+    <div class="w-full mx-auto rounded-xl bg-white p-6 shadow-4">
+        <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 py-2">
+                <div class="col-span-1">
+                    <!--Phone number input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="phone"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Phone number
+                        </label>
+                        <input id="phone" type="tel" placeholder="Enter your email"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Imsi/Iccid input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="imsi"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Imsi/Iccid
+                        </label>
+                        <input id="imsi" type="tel" placeholder="9494877484494999"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Phone number input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="name"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Subscriber Name
+                        </label>
+                        <input id="name" type="text" placeholder="Aegon Targaryen"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Registry Date input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="registry"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Registry Date
+                        </label>
+                        <input id="registry" type="date" placeholder="USD Prepaid (B2B Tag)"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Status Date input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="date"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Status Date
+                        </label>
+                        <input id="date" type="date" placeholder="5/4/2016"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Sim Card input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="sim"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Sim Card Type
+                        </label>
+                        <input id="sim" type="text" placeholder="4G ACCESS"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-2">
+                <div class="col-span-1">
+                    <!--Profile Plan input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="plan"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Profile Plan
+                        </label>
+                        <input id="plan" type="text" placeholder="USD Prepaid (B2B Tag)"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <!--Service Type input-->
+                    <div class="w-full">
+                        <label for="service"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Service Type
+                        </label>
+                        <input id="service" type="text" placeholder="Mobile GSM"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--classification input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="classification"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Classification
+                        </label>
+                        <input id="classification" type="text" placeholder="B2B"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <!--Status input-->
+                    <div class="max-w-screen lg:max-w-md">
+                        <label for="status"
+                            class="block mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Status
+                        </label>
+                        <input id="status" type="text" placeholder="Active"
+                            class="block w-full px-3 py-4 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="my-4">
+        <h1 class="text-xl my-1 text-gray-500">Call Details</h1>
+        <div class="w-full mx-auto rounded-xl bg-white p-6 shadow-4">
+            <form>
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!--Drag a column input-->
+                    <div class="w-full md:w-[550px] mb-4 md:mb-0">
+                        <input id="darg" type="text" placeholder="Drag a column header here to group by that column"
+                            class="block w-full px-3 py-3 border bg-gray-100 border-gray-100 rounded-2xl shadow-sm text-sm placeholder-black transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500" />
+                    </div>
+                    <!--Search Dates input-->
+                    <div class="flex items-center gap-4">
+                        <label for="sim"
+                            class="mb-2 text-sm lg:text-base font-light tracking-wider text-gray-700">
+                            Search Dates
+                        </label>
+                        <div class="w-full max-w-xs">
+                            <select
+                                class="select select-solid pl-10 pr-8 py-2 rounded-lg border border-gray-300 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                <option>23/07/2024</option>
+                                <option>23/07/2024</option>
+                                <option>23/07/2024</option>
+                            </select>
+                        </div>
+                        <div class="relative w-full max-w-xs">
+                            <!-- Icon -->
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg id="Groupe_20447" data-name="Groupe 20447" xmlns="http://www.w3.org/2000/svg" width="19.169" height="19.169" viewBox="0 0 19.169 19.169">
+                                    <path id="Tracé_23507" data-name="Tracé 23507" d="M0,0H19.169V19.169H0Z" fill="none"/>
+                                    <path id="Tracé_23508" data-name="Tracé 23508" d="M15.779,3H4.6A1.6,1.6,0,0,0,3,4.6V15.779a1.6,1.6,0,0,0,1.6,1.6H15.779a1.6,1.6,0,0,0,1.6-1.6V4.6A1.6,1.6,0,0,0,15.779,3ZM9.158,13.615a.8.8,0,0,1-1.126,0L5.164,10.747A.8.8,0,0,1,6.291,9.621l2.3,2.3,5.5-5.5a.8.8,0,0,1,1.126,1.126L9.158,13.615Z" transform="translate(-0.604 -0.604)" fill="#ff7900"/>
+                                  </svg>                                  
+                            </div>
+
+                            <!-- Select -->
+                            <select
+                                class="select select-solid pl-10 pr-8 py-2 rounded-lg border border-gray-300 bg-gray-100 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 w-full">
+                                <option>23/07/2024</option>
+                                <option>23/07/2024</option>
+                                <option>23/07/2024</option>
+                            </select>
+                        </div>
+
+                        <!-- <button type="button" class="py-3 px-4 inline-flex items-center disabled:pointer-events-none">
+                            <svg id="refresh" xmlns="http://www.w3.org/2000/svg" width="20.323" height="21.203"
+                                viewBox="0 0 20.323 21.203">
+                                <path id="Tracé_23150" data-name="Tracé 23150"
+                                    d="M6.757,21.327c.021.016.044.029.065.045.113.087.234.16.35.242.26.186.52.37.794.529l.027.013a9.728,9.728,0,0,0,1.062.537l.12.05c.17.071.335.14.523.206a10.734,10.734,0,0,0,1.291.354c.252.052.492.091.719.121.035,0,.07.006.105.01.159.019.319.037.462.045.265.027.544.04.81.04A10.249,10.249,0,0,0,23.323,13.282a1.138,1.138,0,1,0-2.275,0,7.972,7.972,0,0,1-7.963,7.963c-.26,0-.516-.026-.772-.052-.185-.015-.385-.046-.587-.081-.179-.031-.358-.064-.533-.108-.13-.031-.254-.067-.378-.1a8,8,0,0,1-1.7-.722l-.008,0c-.206-.119-.4-.258-.593-.395-.1-.072-.206-.134-.3-.211S8,19.386,7.894,19.3c-.161-.14-.324-.277-.476-.427-.075-.076-.141-.162-.213-.242l2.037-.367a1.138,1.138,0,0,0-.4-2.239l-4.75.856A1.139,1.139,0,0,0,3.17,18.2l.856,4.749a1.139,1.139,0,0,0,1.119.935,1.164,1.164,0,0,0,.2-.018,1.139,1.139,0,0,0,.918-1.322l-.355-1.966.027.024A10.48,10.48,0,0,0,6.757,21.327Zm12.81-16.09c-.02-.016-.043-.028-.063-.043-.118-.091-.246-.168-.367-.254-.254-.181-.508-.362-.776-.518-.02-.011-.041-.019-.061-.031a9.719,9.719,0,0,0-1.031-.521l-.12-.05c-.17-.071-.335-.14-.523-.206a10.6,10.6,0,0,0-1.292-.354c-.251-.052-.49-.091-.718-.121-.035,0-.07-.006-.1-.01-.16-.019-.319-.037-.463-.045-.266-.027-.544-.04-.81-.04A10.249,10.249,0,0,0,3,13.282a1.138,1.138,0,1,0,2.275,0,7.972,7.972,0,0,1,7.963-7.963c.26,0,.516.026.772.052.185.015.385.046.587.081.179.031.358.064.533.108.13.032.254.067.378.1a8,8,0,0,1,2.317,1.13c.1.068.2.127.288.2.109.084.207.182.311.272.163.142.329.281.484.436.074.075.138.159.209.237L17.081,8.3a1.138,1.138,0,0,0,.2,2.257,1.165,1.165,0,0,0,.2-.018l4.75-.856a1.139,1.139,0,0,0,.918-1.322L22.3,3.616a1.138,1.138,0,1,0-2.239.4l.355,1.966c-.014-.014-.03-.025-.044-.038A10.71,10.71,0,0,0,19.567,5.237Z"
+                                    transform="translate(-3 -2.68)" fill="#1aaddb" />
+                            </svg>
+                        </button> -->
+                    </div>
+                </div>
+            </form>
+            <div class="mt-4">
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead class="bg-sky-300 block rounded-xl py-3 mb-5">
+                            <tr class="flex justify-between">
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Trouble Ticket</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Status</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Route</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Begin Date</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Attribution Date</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Insert by</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-white">Final Date</th>
+                            </tr>
+                        </thead>
+                        <thead class="bg-sky-100 block rounded-xl py-3">
+                            <tr class="flex justify-between">
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">T</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Priceable</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Description</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Date</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Initial Balance</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Chargeable</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Balance</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Description</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Username</th>
+                                <th class="px-4 py-2 text-left text-sm lg:text-base font-normal text-black">Comment</th>
+                            </tr>
+                        </thead>
+                        <!-- Add margin between thead and tbody -->
+                        <tbody class="block mt-2">
+                            <tr class="flex justify-between items-center my-1">
+                                <!--Last 7 days input-->
+                                <div class="max-w-md">
+                                    <!-- <h1 class="text-base font-light text-gray-600">ID: 1023567589895</h1> -->
+                                </div>
+                                <!--Buttons group input-->
+                                <div class="max-w-md">
+                                    <button type="button"
+                                        class="py-3 px-4 inline-flex items-center disabled:pointer-events-none">
+                                        <svg id="Icon_ionic-ios-close-circle-outline"
+                                            data-name="Icon ionic-ios-close-circle-outline"
+                                            xmlns="http://www.w3.org/2000/svg" width="14.241" height="14.241"
+                                            viewBox="0 0 14.241 14.241">
+                                            <path id="Tracé_23192" data-name="Tracé 23192"
+                                                d="M17.684,16.907l-1.8-1.8,1.8-1.8a.547.547,0,1,0-.774-.774l-1.8,1.8-1.8-1.8a.547.547,0,1,0-.774.774l1.8,1.8-1.8,1.8a.529.529,0,0,0,0,.774.543.543,0,0,0,.774,0l1.8-1.8,1.8,1.8a.55.55,0,0,0,.774,0A.543.543,0,0,0,17.684,16.907Z"
+                                                transform="translate(-7.985 -7.983)" fill="#ee3b3b" />
+                                            <path id="Tracé_23193" data-name="Tracé 23193"
+                                                d="M10.5,4.334a6.16,6.16,0,1,1-4.358,1.8,6.121,6.121,0,0,1,4.358-1.8m0-.959A7.121,7.121,0,1,0,17.616,10.5,7.12,7.12,0,0,0,10.5,3.375Z"
+                                                transform="translate(-3.375 -3.375)" fill="#ee3b3b" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </tr>
+                            <tr class="flex justify-between bg-gray-100 py-2 rounded-xl">
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">M</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Prbt</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Channel:VAS-IMMIT RBT</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">7/02/2024 8:01 AM</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">-0.20</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">2.708.58</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">(T)Main Account</th>
+                            </tr>
+                            <!-- Second rows -->
+                            <tr class="flex justify-between items-center my-1">
+                                <!--Last 7 days input-->
+                                <div class="max-w-md">
+                                    <!-- <h1 class="text-base font-light text-gray-600">ID: 1023567589895</h1> -->
+                                </div>
+                                <!--Buttons group input-->
+                                <div class="max-w-md">
+                                    <button type="button"
+                                        class="py-3 px-4 inline-flex items-center disabled:pointer-events-none">
+                                        <svg id="Icon_ionic-ios-close-circle-outline"
+                                            data-name="Icon ionic-ios-close-circle-outline"
+                                            xmlns="http://www.w3.org/2000/svg" width="14.241" height="14.241"
+                                            viewBox="0 0 14.241 14.241">
+                                            <path id="Tracé_23192" data-name="Tracé 23192"
+                                                d="M17.684,16.907l-1.8-1.8,1.8-1.8a.547.547,0,1,0-.774-.774l-1.8,1.8-1.8-1.8a.547.547,0,1,0-.774.774l1.8,1.8-1.8,1.8a.529.529,0,0,0,0,.774.543.543,0,0,0,.774,0l1.8-1.8,1.8,1.8a.55.55,0,0,0,.774,0A.543.543,0,0,0,17.684,16.907Z"
+                                                transform="translate(-7.985 -7.983)" fill="#ee3b3b" />
+                                            <path id="Tracé_23193" data-name="Tracé 23193"
+                                                d="M10.5,4.334a6.16,6.16,0,1,1-4.358,1.8,6.121,6.121,0,0,1,4.358-1.8m0-.959A7.121,7.121,0,1,0,17.616,10.5,7.12,7.12,0,0,0,10.5,3.375Z"
+                                                transform="translate(-3.375 -3.375)" fill="#ee3b3b" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </tr>
+                            <tr class="flex justify-between bg-gray-100 py-2 rounded-xl">
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">M</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Prbt</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Channel:VAS-IMMIT RBT</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">7/02/2024 8:01 AM</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">-0.20</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">2.708.58</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">(T)Main Account</th>
+                            </tr>
+                            <!-- Third rows -->
+                            <tr class="flex justify-between items-center my-1">
+                                <!--Last 7 days input-->
+                                <div class="max-w-md">
+                                    <!-- <h1 class="text-base font-light text-gray-600">ID: 1023567589895</h1> -->
+                                </div>
+                                <!--Buttons group input-->
+                                <div class="max-w-md">
+                                    <button type="button"
+                                        class="py-3 px-4 inline-flex items-center disabled:pointer-events-none">
+                                        <svg id="Icon_ionic-ios-close-circle-outline"
+                                            data-name="Icon ionic-ios-close-circle-outline"
+                                            xmlns="http://www.w3.org/2000/svg" width="14.241" height="14.241"
+                                            viewBox="0 0 14.241 14.241">
+                                            <path id="Tracé_23192" data-name="Tracé 23192"
+                                                d="M17.684,16.907l-1.8-1.8,1.8-1.8a.547.547,0,1,0-.774-.774l-1.8,1.8-1.8-1.8a.547.547,0,1,0-.774.774l1.8,1.8-1.8,1.8a.529.529,0,0,0,0,.774.543.543,0,0,0,.774,0l1.8-1.8,1.8,1.8a.55.55,0,0,0,.774,0A.543.543,0,0,0,17.684,16.907Z"
+                                                transform="translate(-7.985 -7.983)" fill="#ee3b3b" />
+                                            <path id="Tracé_23193" data-name="Tracé 23193"
+                                                d="M10.5,4.334a6.16,6.16,0,1,1-4.358,1.8,6.121,6.121,0,0,1,4.358-1.8m0-.959A7.121,7.121,0,1,0,17.616,10.5,7.12,7.12,0,0,0,10.5,3.375Z"
+                                                transform="translate(-3.375 -3.375)" fill="#ee3b3b" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </tr>
+                            <tr class="flex justify-between bg-gray-100 py-2 rounded-xl">
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">M</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Prbt</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">Channel:VAS-IMMIT RBT</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">7/02/2024 8:01 AM</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">-0.20</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">2.708.58</th>
+                                <th class="px-4 py-2 text-sm lg:text-base font-normal text-gray-600">(T)Main Account</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between items-center">
+        <!--Drag a column input-->
+        <div>
+            
+        </div>
+        <!--Search Dates input-->
+        <div class="flex items-center gap-4 mt-14">
+            <div class="w-full max-w-xs">
+                <button class="btn flex items-center gap-4 bg-slate-200">
+                    <svg id="refresh" xmlns="http://www.w3.org/2000/svg" width="20.323" height="21.203" viewBox="0 0 20.323 21.203">
+                        <path id="Tracé_23150" data-name="Tracé 23150" d="M6.757,21.327c.021.016.044.029.065.045.113.087.234.16.35.242.26.186.52.37.794.529l.027.013a9.728,9.728,0,0,0,1.062.537l.12.05c.17.071.335.14.523.206a10.734,10.734,0,0,0,1.291.354c.252.052.492.091.719.121.035,0,.07.006.105.01.159.019.319.037.462.045.265.027.544.04.81.04A10.249,10.249,0,0,0,23.323,13.282a1.138,1.138,0,1,0-2.275,0,7.972,7.972,0,0,1-7.963,7.963c-.26,0-.516-.026-.772-.052-.185-.015-.385-.046-.587-.081-.179-.031-.358-.064-.533-.108-.13-.031-.254-.067-.378-.1a8,8,0,0,1-1.7-.722l-.008,0c-.206-.119-.4-.258-.593-.395-.1-.072-.206-.134-.3-.211S8,19.386,7.894,19.3c-.161-.14-.324-.277-.476-.427-.075-.076-.141-.162-.213-.242l2.037-.367a1.138,1.138,0,0,0-.4-2.239l-4.75.856A1.139,1.139,0,0,0,3.17,18.2l.856,4.749a1.139,1.139,0,0,0,1.119.935,1.164,1.164,0,0,0,.2-.018,1.139,1.139,0,0,0,.918-1.322l-.355-1.966.027.024A10.48,10.48,0,0,0,6.757,21.327Zm12.81-16.09c-.02-.016-.043-.028-.063-.043-.118-.091-.246-.168-.367-.254-.254-.181-.508-.362-.776-.518-.02-.011-.041-.019-.061-.031a9.719,9.719,0,0,0-1.031-.521l-.12-.05c-.17-.071-.335-.14-.523-.206a10.6,10.6,0,0,0-1.292-.354c-.251-.052-.49-.091-.718-.121-.035,0-.07-.006-.1-.01-.16-.019-.319-.037-.463-.045-.266-.027-.544-.04-.81-.04A10.249,10.249,0,0,0,3,13.282a1.138,1.138,0,1,0,2.275,0,7.972,7.972,0,0,1,7.963-7.963c.26,0,.516.026.772.052.185.015.385.046.587.081.179.031.358.064.533.108.13.032.254.067.378.1a8,8,0,0,1,2.317,1.13c.1.068.2.127.288.2.109.084.207.182.311.272.163.142.329.281.484.436.074.075.138.159.209.237L17.081,8.3a1.138,1.138,0,0,0,.2,2.257,1.165,1.165,0,0,0,.2-.018l4.75-.856a1.139,1.139,0,0,0,.918-1.322L22.3,3.616a1.138,1.138,0,1,0-2.239.4l.355,1.966c-.014-.014-.03-.025-.044-.038A10.71,10.71,0,0,0,19.567,5.237Z" transform="translate(-3 -2.68)" fill="#1aaddb"/>
+                      </svg>
+                      
+                    Refresh
+                </button>
+            </div>
+            <div class="w-full max-w-xs">
+                <button class="btn flex items-center gap-4 bg-slate-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.028" height="22.028" viewBox="0 0 22.028 22.028">
+                        <path id="_11_Exit" data-name="11 Exit" d="M24.028,3.1V22.926a1.1,1.1,0,0,1-1.1,1.1H7.507a1.1,1.1,0,0,1-1.1-1.1V16.318a1.1,1.1,0,1,1,2.2,0v5.507H21.825V4.2H8.608V9.71a1.1,1.1,0,1,1-2.2,0V3.1A1.1,1.1,0,0,1,7.507,2H22.926A1.1,1.1,0,0,1,24.028,3.1ZM14.622,15.349a1.106,1.106,0,0,0,1.564,1.564L19.3,13.8a1.139,1.139,0,0,0,0-1.564L16.186,9.115a1.106,1.106,0,1,0-1.564,1.564l1.245,1.234H3.1a1.1,1.1,0,0,0,0,2.2H15.867Z" transform="translate(-2 -2)" fill="#d20202"/>
+                      </svg>
+                      
+                    Exit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

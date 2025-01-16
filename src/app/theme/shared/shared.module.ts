@@ -11,7 +11,7 @@ import { CustomerCareComponent } from '../layouts/admin-layout/customer-care/cus
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { SidebarContentComponent } from '../layouts/admin-layout/sidebar/sidebar-content/sidebar-content.component';
 import { MenuItemComponent } from '../layouts/admin-layout/sidebar/sidebar-content/menu-item/menu-item.component';
-import { MenuBottomComponent } from '../layouts/admin-layout/sidebar/sidebar-content/menu-bottom/menu-bottom.component';
+import { TransactionsComponent } from '../layouts/admin-layout/customer-care/billing/transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { MenuBottomComponent } from '../layouts/admin-layout/sidebar/sidebar-con
     BreadcrumbComponent,
     SidebarContentComponent,
     MenuItemComponent,
-    MenuBottomComponent
+    TransactionsComponent
     ],
   imports: [
     CommonModule,
@@ -41,7 +41,7 @@ import { MenuBottomComponent } from '../layouts/admin-layout/sidebar/sidebar-con
     BreadcrumbComponent,
     SidebarContentComponent,
     MenuItemComponent,
-    MenuBottomComponent
+    TransactionsComponent
   ]
 })
 export class SharedModule { }
